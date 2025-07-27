@@ -1,14 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --color-white: #FDFDFD;
-  --color-black: #1E1E1E;
-  --color-primary: #0CACAC;
-  --color-secondary: #4C9C94;
-  --color-accent: #A9BABA;
+  --color-white: #fdfdfd;
+  --color-black: #1e1e1e;
+  --color-primary: #0cacac;
+  --color-secondary: #4c9c94;
+  --color-accent: #a9baba;
   --color-background: #555555;
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Poppins, Helvetica, sans-serif;
 }
