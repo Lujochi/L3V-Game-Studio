@@ -55,35 +55,53 @@ export default function Home() {
       </div>
       <section
         id="Jogos"
-        className="flex flex-col items-center justify-center bg-[var(--color-black)] mt-[calc(100vh-96px)] relative"
+        className="flex flex-col items-center justify-center bg-[var(--color-black)] mt-[calc(100vh-96px)] pb-[150px] relative"
       >
         <h2 className="text-[64px] font-bold text-white pt-16">Jogos</h2>
-        <div className="relative w-[1000px] h-[600px] mt-16">
-          <Image
-            src="/Images/bg-jogo1.png"
-            alt="Imagem de jogos"
-            width={1000}
-            height={600}
-            className="w-full h-full object-cover rounded-lg"
-          />
-          <div className="absolute left-0 bottom-0 ml-0 mb-0">
-            <h4 className="absolute text-[40px] font-bold text-white ml-8 pr-8 pl-8 rounded-[10px] bg-black bottom-[198px] z-1">
-              The Witcher
-            </h4>
-            <div
-              className="w-[600px] h-[220px] rounded-tr-[10px] rounded-bl-[10px] pl-12 pr-6 pt-6 mt-2 relative"
-              style={{ backgroundColor: "rgba(0,0,0,0.45)" }}
-            >
-              <p className="text-[18px] text-white w-[535px] relative z-10">
-                The Witcher se passa em um mundo sombrio e mágico, onde
-                monstros, guerras e traições são comuns. Geralt de Rívia, um
-                bruxo mutante e caçador de monstros, percorre o continente em
-                busca de contratos, enfrentando criaturas perigosas e dilemas
-                morais. Seu destino se entrelaça com a feiticeira Yennefer e a
-                jovem Ciri, herdeira de um poder capaz de mudar o mundo.
-              </p>
+        <div className="relative flex items-center justify-center w-[1100px] mt-16">
+          <button className="z-10 mr-18 flex-shrink-0 cursor-pointer">
+            <Image
+              src="/Images/arrow-left.png"
+              alt="Seta para esquerda"
+              width={50}
+              height={50}
+            />
+          </button>
+          <div className="relative w-[1000px] h-[600px] mx-0 flex-shrink-0">
+            <Image
+              src="/Images/bg-jogo1.png"
+              alt="Imagem de jogos"
+              width={1000}
+              height={600}
+              className="w-full h-full object-cover rounded-lg"
+            />
+            <div className="absolute left-0 bottom-0 ml-0 mb-0">
+              <h4 className="absolute text-[40px] font-bold text-white ml-8 pr-8 pl-8 rounded-[10px] bg-black bottom-[198px] z-1">
+                The Witcher
+              </h4>
+              <div
+                className="w-[600px] h-[220px] rounded-tr-[10px] rounded-bl-[10px] pl-12 pr-6 pt-6 mt-2 relative"
+                style={{ backgroundColor: "rgba(0,0,0,0.45)" }}
+              >
+                <p className="text-[18px] text-white w-[535px] relative z-10">
+                  The Witcher se passa em um mundo sombrio e mágico, onde
+                  monstros, guerras e traições são comuns. Geralt de Rívia, um
+                  bruxo mutante e caçador de monstros, percorre o continente em
+                  busca de contratos, enfrentando criaturas perigosas e dilemas
+                  morais. Seu destino se entrelaça com a feiticeira Yennefer e a
+                  jovem Ciri, herdeira de um poder capaz de mudar o mundo.
+                </p>
+              </div>
             </div>
           </div>
+          <button className="z-10 ml-18 flex-shrink-0 cursor-pointer">
+            <Image
+              src="/Images/arrow-right.png"
+              alt="Seta para direita"
+              width={50}
+              height={50}
+            />
+          </button>
         </div>
       </section>
     </div>
