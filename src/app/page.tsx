@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <div>
       <header className="flex items-center justify-between pr-32 pl-32 relative h-24 z-1">
-        {/* bg-[var(--color-background)] rounded-b-[20px] */}
         <nav className="flex-1">
           <ul className="flex gap-20 font-bold text-[18px] text-white uppercase">
             {[
@@ -93,6 +92,12 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            <a
+              href="#"
+              className="text-[18px] text-white font-bold absolute bottom-0 right-0 mr-8 mb-8 bg-black px-4 py-2 rounded-full hover:bg-[var(--color-primary)] transition-colors duration-300"
+            >
+              Saiba mais
+            </a>
           </div>
           <button className="z-10 ml-18 flex-shrink-0 cursor-pointer">
             <Image
@@ -102,6 +107,38 @@ export default function Home() {
               height={50}
             />
           </button>
+        </div>
+      </section>
+      <section
+        id="Sobre"
+        className="flex flex-col items-center justify-center bg-white pb-[150px]"
+      >
+        <h2 className="text-[64px] font-bold text-black pt-16">Sobre</h2>
+        <div className="flex items-center justify-center mt-16 gap-16">
+          <Image
+            src="/Images/img-avatares-sobre.png"
+            alt="Imagem sobre"
+            width={836}
+            height={582}
+            className="w-[836px] h-[582px] rounded-lg"
+          />
+          <div className="flex flex-col items-start justify-center ">
+            <h4 className="text-[24px] font-bold text-black">Nossa Historia</h4>
+            <p className="text-[18px] font-medium text-black w-[600px] mt-2">
+              A L3V Game Studio nasceu em 2025 da paixão de três amigos por
+              criar experiências imersivas que misturam estratégia, aventura e
+              tecnologia.
+              <br /> Combinamos criatividade, design e desenvolvimento para
+              transformar ideias em jogos envolventes — daqueles que marcam a
+              memória de quem joga. Aqui, cada projeto é tratado como um novo
+              universo: com suas próprias regras, personagens e desafios.
+              <br /> Nossa missão é desenvolver jogos com alma, explorando o que
+              há de mais novo em tecnologia, mas sempre guiados pelo coração do
+              jogador.
+              <br />
+              <br /> Somos mais que um estúdio — somos construtores de mundos.
+            </p>
+          </div>
         </div>
       </section>
     </div>
