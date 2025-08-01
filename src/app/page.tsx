@@ -59,7 +59,9 @@ export default function Home() {
         id="Jogos"
         className="flex flex-col items-center justify-center bg-[var(--color-black)] mt-[calc(100vh-96px)] pb-[150px] relative"
       >
-        <h2 className="text-[64px] font-bold text-white pt-16">Jogos</h2>
+        <h2 className="text-[64px] font-bold text-white pt-16 uppercase">
+          Jogos
+        </h2>
         <div className="relative flex items-center justify-center w-[1100px] mt-16">
           <button className="z-10 mr-18 flex-shrink-0 cursor-pointer">
             <Image
@@ -116,7 +118,9 @@ export default function Home() {
         id="Sobre"
         className="flex flex-col items-center justify-center bg-white pb-[150px]"
       >
-        <h2 className="text-[64px] font-bold text-black pt-16">Sobre</h2>
+        <h2 className="text-[64px] font-bold text-black pt-16 uppercase">
+          Sobre
+        </h2>
         <div className="flex items-center justify-center mt-16 gap-16">
           <Image
             src="/Images/img-avatares-sobre.png"
@@ -262,6 +266,70 @@ export default function Home() {
           </div>
         </form>
       </section>
+      <footer className="flex items-center justify-around bg-black text-white h-[125px]">
+        <Image
+          src="/Images/logo-icon.png"
+          alt="Logo"
+          width={100}
+          height={100}
+        />
+        <div className="flex flex-col items-center gap-2 mt-4 ml-26 text-[14px]">
+          <p>Política de Privacidade do Site</p>
+          <span className="font-medium">
+            © 2025 LΞV GAME STUDIO / DIREITOS RESERVADOS
+          </span>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+          <p className="font-medium text-[18px]">Siga-nos</p>
+          <ul className="flex items-center justify-center gap-4 text-white">
+            <li>
+              <a
+                href="https://www.facebook.com/L3VStudio"
+                target="_blank"
+                className="hover:text-[var(--color-primary)] transition-colors duration-300"
+              >
+                <i className="fa-brands fa-facebook-f text-[19px]"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/L3VStudio"
+                target="_blank"
+                className="hover:text-[var(--color-primary)] transition-colors duration-300"
+              >
+                <i className="fa-brands fa-instagram text-[24px]"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/L3VStudio"
+                target="_blank"
+                className="hover:text-[var(--color-primary)] transition-colors duration-300"
+              >
+                <i className="fa-brands fa-x-twitter text-[23px]"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@L3VStudio"
+                target="_blank"
+                className="hover:text-[var(--color-primary)] transition-colors duration-300"
+              >
+                <i className="fa-brands fa-tiktok text-[20px]"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@L3VStudio"
+                target="_blank"
+                className="hover:text-[var(--color-primary)] transition-colors duration-300"
+              >
+                <i className="fa-brands fa-youtube text-[25px]"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
   );
 }
